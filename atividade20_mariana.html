@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado Animado</title>
+    <style>
+        body {
+            background-color: #222;
+            overflow: hidden;
+        }
+
+        .quadrado {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quadrado" id="quadrado"></div>
+
+    <script>
+        let quadrado = document.getElementById("quadrado");
+        let pos = 0, direcao = 1;
+
+        setInterval(() => {
+            pos += 5 * direcao;
+            if (pos >= window.innerWidth - 50 || pos <= 0) direcao *= -1;
+            quadrado.style.left = pos + "px";
+        }, 20);
+    </script>
+
+</body>
+</html>

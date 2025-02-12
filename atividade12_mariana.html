@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        body {
+            font-family: verdana, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            cursor: pointer;
+        }
+        .contador {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #333333;
+        }
+    </style>
+</head>
+<body onclick="incrementar()">
+    <div class="contador">
+        <h1>Cliques: <span id="clickCount">0</span></h1>
+    </div>
+
+    <script>
+        let contador = 0;
+
+        function incrementar() {
+            contador++;
+            document.getElementById("clickCount").textContent = contador;
+        }
+    </script>
+</body>
+</html>

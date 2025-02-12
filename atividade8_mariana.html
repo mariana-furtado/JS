@@ -1,0 +1,44 @@
+
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle de Fonte</title>
+    </head>
+    <body>
+    
+    
+    <h1 id="texto">nunca foi sorte sempre foi deus <h1> </h1>
+    
+    <a href="#" onclick="diminuir()">Diminuir</a> |
+    <a href="#" onclick="aumentar()">Aumentar</a>
+    
+    
+    <script>
+        let tamanhoFonte = 24;
+    
+    
+        function aumentar() {
+            tamanhoFonte += 2;
+            document.getElementById("texto").style.fontSize = tamanhoFonte + "px";
+        }
+    
+    
+        function diminuir() {
+            if (tamanhoFonte > 10) {
+                tamanhoFonte -= 2;
+                document.getElementById("texto").style.fontSize = tamanhoFonte + "px";
+            }
+        }
+    </script>
+    
+    
+    </body>
+    </html
+    
+</head>
+<body>
+    
+</body>
+</html>

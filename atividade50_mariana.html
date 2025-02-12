@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Luz</title>
+</head>
+<body>
+
+    <img id="lampada" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Lâmpada Apagada" style="cursor: pointer;">
+
+    <script>
+        let lampada = document.getElementById("lampada");
+
+        lampada.addEventListener("click", function() {
+            if (lampada.src.includes("pic_bulboff.gif")) {
+                lampada.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+            } else {
+                lampada.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+            }
+        });
+    </script>
+
+</body>
+</html>

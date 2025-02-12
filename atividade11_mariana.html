@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>atividade11_mariana.html</title>
+</head>
+<body>
+    <p style="font-size: 20px; color: rgb(0, 119, 255);">Quer ir no jogo hoje?</p>
+    <button class="button" onmouseover="moveButton(this)" style="background-color: rgb(0, 109, 128); color: white; padding: 10px 20px;">Sim</button>
+
+    <script>
+        function moveButton(x) {
+            marginX = Math.floor(Math.random() * 600)
+            marginY = Math.floor(Math.random() * 600)
+            x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+        }
+    </script>
+</body>
+</html>

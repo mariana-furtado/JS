@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores Aleatórias</title>
+</head>
+<body style="text-align: center; padding: 50px;">
+
+    <h1>Mudando Cores Aleatoriamente</h1>
+
+    <script>
+        function mudarCor() {
+            const corAleatoria = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+            document.body.style.backgroundColor = corAleatoria;
+        }
+
+        setInterval(mudarCor, 5000); // Muda a cor a cada 5 segundos
+    </script>
+
+</body>
+</html>

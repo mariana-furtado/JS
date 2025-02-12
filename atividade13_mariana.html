@@ -1,0 +1,28 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade13_mariana.html</title>
+</head>
+<body>
+
+    <div id="quadrado" onclick="diminuir()" 
+         style="width: 200px; height: 200px; background: blue;"></div>
+
+    <script>
+        function diminuir() {
+            let quadrado = document.getElementById("quadrado");
+            let tamanho = quadrado.offsetWidth;
+
+            if (tamanho > 20) {
+                quadrado.style.width = (tamanho - 20) + "px";
+                quadrado.style.height = (tamanho - 20) + "px";
+            } else {
+                quadrado.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

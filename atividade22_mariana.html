@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha Secreta</title>
+</head>
+<body>
+
+    <form id="senhaForm">
+        <input type="password" id="senha" placeholder="Digite sua senha"><br>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <script>
+        document.getElementById("senhaForm").addEventListener("submit", function(event) {
+            let senha = document.getElementById("senha").value;
+
+            if (senha.length < 6) {
+                alert("Senha fraca! Use pelo menos 6 caracteres.");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

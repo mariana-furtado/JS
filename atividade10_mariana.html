@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>atividade10_mariana.html</title>
+    <meta nome="viewport"content="width=device-width, initial-scale=1.0">
+</head>
+<body>  
+    <button onclick="mudar()">Aperte aqui</button>
+    <p id="demo">vc e trouxa</p>  
+    
+    <script> 
+    function mudar() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = text.toUpperCase();
+        text.toLocaleUpperCase();
+    }
+    </script>
+</body>
+</html>
